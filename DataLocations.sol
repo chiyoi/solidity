@@ -14,9 +14,9 @@ contract DataLocations {
         _f(arr, map, myStructs[1]);
 
         // get a struct from a mapping
-        MyStruct storage myStruct = myStructs[1];
+        // MyStruct storage myStruct = myStructs[1];
         // create a struct in memory
-        MyStruct memory myMemStruct = MyStruct(0);
+        // MyStruct memory myMemStruct = MyStruct(0);
     }
 
     function _f(
