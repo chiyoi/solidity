@@ -3,7 +3,7 @@ pragma solidity ^0.8.20;
 
 contract SimpleStorage {
     // State variable to store a number
-    uint public num;
+    uint num;
 
     // You need to send a transaction to write to a state variable.
     function set(uint v) public {
