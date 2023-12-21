@@ -11,7 +11,8 @@ contract SimpleStorage {
     }
 
     // You can read from a state variable without sending a transaction.
-    function get() public view returns (uint v) {
+    function get() public view returns (uint v, uint v1) {
         v = num;
+        v1 = num + 1;
     }
 }
