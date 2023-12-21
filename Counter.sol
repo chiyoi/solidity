@@ -4,6 +4,10 @@ pragma solidity ^0.8.20;
 contract Counter {
     uint count;
 
+    constructor(uint init) {
+        count = init;
+    }
+
     // Function to get the current count
     function get() public view returns (uint) {
         return count;
