@@ -31,7 +31,7 @@ contract Payable {
 
     // Function to transfer Ether from this contract to address from input
     function transfer(address payable _to, uint _amount) public {
-        // Note that "to" is declared as payable
+        // Note: "to" is declared as payable
         (bool success, ) = _to.call{value: _amount}("");
         require(success, "Failed to send Ether");
     }
